@@ -1,0 +1,26 @@
+<p>speaker-edit works!</p>
+
+<form #editSpeaker="ngForm" (ngSubmit)="savechanges(editSpeaker.value)">
+    <label>Enter Speaker ID</label>
+        <input type="text" name="speakerID" ngModel [(ngModel)]="speakeremailid/>
+            <br/>
+
+            <label>password: </label>
+            <input type="text"  name="password" ngModel [(ngModel)]="password"/>
+            <br/>
+        <label>Speaker Name: </label>
+        <input type="text" name="speakername" ngModel [(ngModel)]="speakername" />
+        <br/>
+
+        <label>skills: </label>
+        <input type="text"  name="skills" ngModel [(ngModel)]="skills"/>
+        
+        
+        <label>contact Number: </label>
+ 
+        <input type="text"  name="contactnumber" ngModel [(ngModel)]="contactnumber"/>
+        <br/>
+        
+        <input type="button" value="Find the Speaker to Edit" (click)="edit($event)"  />
+        <input type="submit" value="save"  />
+        </form>
