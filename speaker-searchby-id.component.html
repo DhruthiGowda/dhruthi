@@ -1,0 +1,21 @@
+<p>speaker-searchby-id works!</p>
+
+<form #searchbyID="ngForm" (ngSubmit)="search(searchSpeaker.value)">
+
+    <label>Enter Speaker ID</label>
+        <input type="text" name="speakerid" ngModel/>
+            <br/>
+        <label> Enter Password </label>
+        <input type="text" name="pwd" ngModel [(ngModel)]="pwd" />
+        <br/>
+        <label>Enter Speaker Name: </label>
+        <input type="text"  name="speakername" ngModel [(ngModel)]="speakername"/>
+        <label>Speaker skills: </label>
+        <input type="text"  name="speakerskills" ngModel [(ngModel)]="speakerskills"/>
+        <label>Enter Speaker Contact Number: </label>
+        <input type="text"  name="contactnum" ngModel [(ngModel)]="contactnum"/>
+        <br/>
+        <input type="submit" value="Search"  />
+    
+    
+    </form>
