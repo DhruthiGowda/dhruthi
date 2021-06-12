@@ -1,0 +1,7 @@
+<p>speaker-delete works!</p>
+
+<form #deleteSpeaker="ngForm" (ngSubmit)="btnclick(deleteSpeaker.value)">
+
+    <input type="text" name="speakerid" ngModel [(ngModel)]="speakerid"/>
+    <input type="submit" value="Delete"  />
+</form> 
